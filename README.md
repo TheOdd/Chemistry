@@ -5,15 +5,18 @@ This project briefly covers the role that Chemistry has had in population growth
  - Birth control
  - Antibiotics
  - GMO's
- 
+
 To compile the program, clone the repository with
 
     git clone https://github.com/TheOdd/Chemistry
-    
+
 Then, go into the repository and compile the project
-    
-    cd Chemistry
+
+    cd Chemistry/src
     g++ Chem.cpp
+
+Finally, to run the program do
+
     ./a.out
-    
+
 You're all set now!
