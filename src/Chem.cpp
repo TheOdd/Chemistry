@@ -16,7 +16,8 @@ int antibiotics();
 string selection; // Variable used to store all menu inputs from user.
 
 int gmoTimelineOptions() {
-	cout << gmoOptionsPrompt;
+	cout << gmoAdditionalOptionsPrompt;
+	cout << gmoAdditionalOptionsString;
 	cout <<  "15. " << back << "\n\n";
 	if (invalid) {
 		cout << "Please enter a valid option!\n\n";

@@ -39,8 +39,8 @@ string gmoThree = "Chemical structures";
 // GMO MENU LIST VARIABLES [END]
 
 // GMO STRING OPTIONS
-string gmoOptionsPrompt = "Would you like to learn more about any of the dates?\n\n\n";
-string gmoOptionsString = "1. 1935 - DNA Discovered\n\n2. 1953 - Double Helix structure in DNA discovered\n\n3. 1973 - Recombinant DNA Created\n\n4. 1975 - Asilomar Conference\n\n5. 1980 - First GMO Patent Issued\n\n6. 1982 - FDA Approves First GMO\n\n7. 1994 - GMO Hits Grocery Stores\n\n8. 1996 - GMO-Resistant Weeds\n\n9. 1997 - Mandatory Labels\n\n10. 1999 - GMO Food Crops Dominate\n\n11. 2003 - GMO-Resistant Pests\n\n12. 2011 - Bt Toxin in Humans\n\n13. 2012 - Farmer Wins Court Battle\n\n14. 2014 - GMO Patent Expires\n\n";
+string gmoAdditionalOptionsPrompt = "Would you like to learn more about any of the dates?\n\n\n";
+string gmoAdditionalOptionsString = "1. 1935 - DNA Discovered\n\n2. 1953 - Double Helix structure in DNA discovered\n\n3. 1973 - Recombinant DNA Created\n\n4. 1975 - Asilomar Conference\n\n5. 1980 - First GMO Patent Issued\n\n6. 1982 - FDA Approves First GMO\n\n7. 1994 - GMO Hits Grocery Stores\n\n8. 1996 - GMO-Resistant Weeds\n\n9. 1997 - Mandatory Labels\n\n10. 1999 - GMO Food Crops Dominate\n\n11. 2003 - GMO-Resistant Pests\n\n12. 2011 - Bt Toxin in Humans\n\n13. 2012 - Farmer Wins Court Battle\n\n14. 2014 - GMO Patent Expires\n\n";
 string gmoOption1 = "Russian scientist Andrei Nikolaevitch Belozersky isolates pure DNA.\n\n";
 string gmoOption2 = "The discovery in 1953 of the double helix, the twisted-ladder structure of deoxyribonucleic acid (DNA),\nby James Watson and Francis Crick marked a milestone in the history of science and gave rise to modern molecular biology,\nwhich is largely concerned with understanding how genes control the chemical processes within cells.\n\n";
 string gmoOption3 = "The idea for man-made DNA, or rDNA, comes from a grad student at Stanford University Medical School.\nProfessor Herbert Boyer and a few of his biologist colleagues run with it.\n\n";
