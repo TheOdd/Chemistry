@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <unistd.h>
+#include "ASCII_Art.h"
 
 using namespace std;
 
@@ -11,185 +12,12 @@ int birthControl();
 int GMO();
 int antibiotics();
 
-string refText = "  ___      __                            \n"
-				 " | _ \\___ / _|___ _ _ ___ _ _  __ ___ ___\n"
-				 " |   / -_)  _/ -_) '_/ -_) ' \\/ _/ -_|_-<\n"
-				 " |_|_\\___|_| \\___|_| \\___|_||_\\__\\___/__/\n"
-				 "                                         \n\n\n";
-string bcText = "  ___ _     _   _       ___         _           _ \n"             /////////////////////////
-				" | _ |_)_ _| |_| |_    / __|___ _ _| |_ _ _ ___| |\n"            //                     //
-				" | _ \\ | '_|  _| ' \\  | (__/ _ \\ ' \\  _| '_/ _ \\ |\n"      //    BC ASCII ART     //
-				" |___/_|_|  \\__|_||_|  \\___\\___/_||_\\__|_| \\___/_|\n"     //                     //
-				"                                                  \n\n\n";    /////////////////////////
-string bc1Text = "  ___ ___ ___ _____ _  _   ___    _ _____ ___ ___ \n"
-				 " | _ )_ _| _ \\_   _| || | | _ \\  /_\\_   _| __/ __|\n"
-				 " | _ \\| ||   / | | | __ | |   / / _ \\| | | _|\\__ \\ \n"
-				 " |___/___|_|_\\ |_| |_||_| |_|_\\/_/ \\_\\_| |___|___/\n"
-				 "                                                  \n\n\n";
-string bc2Text = "  ___     _           \n"
-				 " | _ \\_ _(_)__ ___ ___\n"
-				 " |  _/ '_| / _/ -_|_-<\n"
-				 " |_| |_| |_\\__\\___/__/\n"
-				 "                      \n\n\n";
-string chemStrucText = "   ___ _              _         _   ___ _               _                   \n"
-					   "  / __| |_  ___ _ __ (_)__ __ _| | / __| |_ _ _ _  _ __| |_ _  _ _ _ ___ ___\n"
-					   " | (__| ' \\/ -_) '  \\| / _/ _` | | \\__ \\  _| '_| || / _|  _| || | '_/ -_|_-<\n"
-					   "  \\___|_||_\\___|_|_|_|_\\__\\__,_|_| |___/\\__|_|  \\_,_\\__|\\__|\\_,_|_| \\___/__/\n"
-					   "                                                                            \n\n\n";
-string bc1Stats1 = "Year  | Birth Rate *\n"
-				  "------------------\n"
-				  "1930  |   21.3\n"
-				  "------|-----------\n"
-				  "1935  |   18.7\n"
-				  "------|-----------\n"
-				  "1940  |   19.4\n"
-				  "------|-----------\n"
-				  "1945  |   20.4\n"
-				  "------|-----------\n"
-				  "1950  |   24.1\n"
-				  "------|-----------\n"
-				  "1960  |   23.7\n"
-				  "------|-----------\n"
-				  "1961  |   23.3\n"
-				  "------|-----------\n"
-				  "1962  |   22.4\n"
-				  "------|-----------\n"
-				  "1963  |   21.7\n"
-				  "------|-----------\n"
-				  "1964  |   21.0\n"
-				  "------|-----------\n"
-				  "1965  |   19.4\n"
-				  "------|-----------\n"
-				  "1966  |   18.4\n"
-				  "------|-----------\n"
-				  "1967  |   17.8\n"
-				  "------|-----------\n"
-				  "1968  |   17.5\n\n";
-string bc1Stats2 = "Year  | Birth Rate *\n"
-				  "------------------\n"
-				  "1930  |   21.3\n"
-				  "------|-----------\n"
-				  "1935  |   18.7\n"
-				  "------|-----------\n"
-				  "1940  |   19.4\n"
-				  "------|-----------\n"
-				  "1945  |   20.4\n"
-				  "------|-----------\n"
-				  "1950  |   24.1\n"
-				  "------|-----------\n"
-				  "1960  |   23.7           <--- This is when birth control pills are first made widely available in the U.S.\n"
-				  "------|-----------\n"
-				  "1961  |   23.3\n"
-				  "------|-----------\n"
-				  "1962  |   22.4\n"
-				  "------|-----------\n"
-				  "1963  |   21.7\n"
-				  "------|-----------\n"
-				  "1964  |   21.0\n"
-				  "------|-----------\n"
-				  "1965  |   19.4\n"
-				  "------|-----------\n"
-				  "1966  |   18.4\n"
-				  "------|-----------\n"
-				  "1967  |   17.8\n"
-				  "------|-----------\n"
-				  "1968  |   17.5\n\n";
-string bc1Stats3 = "Year  | Birth Rate *\n"
-				   "------------------\n"
-				   "1930  |   21.3\n"
-				   "------|-----------\n"
-				   "1935  |   18.7\n"
-				   "------|-----------\n"
-				   "1940  |   19.4\n"
-				   "------|-----------\n"
-				   "1945  |   20.4\n"
-				   "------|-----------\n"
-				   "1950  |   24.1\n"
-				   "------|-----------      ┐  \n"
-				   "1960  |   23.7          |  \n"
-				   "------|-----------      |  \n"
-				   "1961  |   23.3          |  \n"
-				   "------|-----------      |  \n"
-				   "1962  |   22.4          |  \n"
-				   "------|-----------      |  \n"
-				   "1963  |   21.7          |  \n"
-				   "------|-----------      |  \n"
-				   "1964  |   21.0          | Birth rates are declining steadily each year.  \n"
-				   "------|-----------      |  \n"
-				   "1965  |   19.4          |  \n"
-				   "------|-----------      |  \n"
-				   "1966  |   18.4          |  \n"
-				   "------|-----------      |  \n"
-				   "1967  |   17.8          |  \n"
-				   "------|-----------      |  \n"
-				   "1968  |   17.5          ┘  \n\n";
 string bc2Stats1 = "Birth control can cost anywhere from $0 (insurance coverage) to $50 a month in the United States.\n";
 string bc2Stats2 = "This can be a major factor in whether or not someone gets the birth control pills, and therefore can affect parts\n"
 				   "of a population, while not touching other areas.\n";
 string bc2Stats3 = "In the United States 98% of women have used birth control at some point in time and 62% of those of reproductive\n"
 				   "age are currently using birth control.\n";
 string bc2Stats4 = "These percentages could very easily increase or decrease, resulting in less or more births, if the prices change.\n";
-string bc3Estradiol = "  ___ ___ _____ ___    _   ___ ___ ___  _    \n"
-				      " | __/ __|_   _| _ \\  /_\\ |   \\_ _/ _ \\| |   \n"
-				      " | _|\\__ \\ | | |   / / _ \\| |) | | (_) | |__ \n"
-				      " |___|___/ |_| |_|_\\/_/ \\_\\___/___\\___/|____|\n"
-				      "                                             \n\n\n";
-string bc3EstradiolChem = "      ____        ____\n"
-						  "     /    \\      /    \\ \n"
-						  "HO__/      \\____/      \\↓___ ← OH\n"
-						  "    \\      / H →\\ H    /    \\ \n"
-						  "     \\____/      \\↓___/      \\ \n"
-						  "          \\      /    \\      /\n"
-						  "           \\____/      \\____/\n\n\n";
-string bc3Progesterone = "  ___ ___  ___   ___ ___ ___ _____ ___ ___  ___  _  _ ___\n"
-						 " | _ \\ _ \\/ _ \\ / __| __/ __|_   _| __| _ \\/ _ \\| \\| | __|\n"
-						 " |  _/   / (_) | (_ | _|\\__ \\ | | | _||   / (_) | .` | _|\n"
-						 " |_| |_|_\\____/ \\___|___|___/ |_| |___|_|_\\____/|_|\\_|___|\n"
-						 "                                                          \n\n\n";
-string bc3ProgesteroneChem = "      ____        ____\n"
-							 "     /    \\      /    \\        O\n"
-							 " O==/      \\←___/      \\↓___ ← ║ ←\n"
-							 "    \\      /   ↑\\ H    /    \\ \n"
-							 "     \\____/    H \\↓___/      \\ \n"
-							 "          \\      /   ↑\\      /\n"
-							 "           \\____/    H \\____/\n\n\n";
-string abText = "    _       _   _ _    _     _   _       \n"                     /////////////////////////
-				"   /_\\  _ _| |_(_) |__(_)___| |_(_)__ ___\n"                   //                     //
-				"  / _ \\| ' \\  _| | '_ \\ / _ \\  _| / _(_-<\n"               //    AB ASCII ART     //
-				" /_/ \\_\\_||_\\__|_|_.__/_\\___/\\__|_\\__/__/\n"            //                     //
-				"                                         \n\n\n";            /////////////////////////
-string ab1Text = "  _  _              _ _    __      __       _       \n"
-				 " | || |_____ __ __ (_) |_  \\ \\    / /__ _ _| |__ ___\n"
-				 " | __ / _ \\ V  V / | |  _|  \\ \\/\\/ / _ \\ '_| / /(_-<\n"
-				 " |_||_\\___/\\_/\\_/  |_|\\__|   \\_/\\_/\\___/_| |_\\_\\/__/\n"
-				 "                                                    \n\n\n";
-string ab2Text = "  ___  _                           _____             _          _ \n"
-				 " |   \\(_)___ ___ __ _ ___ ___ ___ |_   _| _ ___ __ _| |_ ___ __| |\n"
-				 " | |) | (_-</ -_) _` (_-</ -_|_-<   | || '_/ -_) _` |  _/ -_) _` |\n"
-				 " |___/|_/__/\\___\\__,_/__/\\___/__/   |_||_| \\___\\__,_|\\__\\___\\__,_|\n"
-				 "                                                                  \n\n\n";
-string gmoText= "   ________  _______ _      \n"                                  /////////////////////////
-				"  / ____/  |/  / __ ( )_____\n"                                 //                     //
-				" / / __/ /|_/ / / / /// ___/\n"                                //    GMO ASCII ART    //
-				"/ /_/ / /  / / /_/ / (__  ) \n"                               //                     //
-				"\\____/_/  /_/\\____/ /____/  \n"                            /////////////////////////
-				"                            \n\n\n";
-string gmo1Text = "  ___             _   ___                _ _        \n"
-				  " | __|__  ___  __| | / __|_  _ _ __ _ __| (_)___ ___\n"
-				  " | _/ _ \\/ _ \\/ _` | \\__ \\ || | '_ \\ '_ \\ | / -_|_-<\n"
-				  " |_|\\___/\\___/\\__,_| |___/\\_,_| .__/ .__/_|_\\___/__/\n"
-				  "                              |_|  |_|              \n\n\n";
-string gmo3RoundUp = "  ___                  _   _   _      \n"
-					 " | _ \\___ _  _ _ _  __| | | | | |_ __ \n"
-					 " |   / _ \\ || | ' \\/ _` | | |_| | '_ \\ \n"
-					 " |_|_\\___/\\_,_|_||_\\__,_|  \\___/| .__/\n"
-					 "                                |_|   \n\n\n";
-string gmo3RoundUpChem = "          _     _\n"
-						 "         / \\   / \\ O\n"
-						 "        /   \\ /   \\║      H₂N\n"
-						 "   HOOC      N     P     •   \\ /\n"
-						 "             H    / \\         |\n"
-						 "                 HO  OH       |\n\n\n";
 
 // string [INSERT] = "";
 
@@ -237,7 +65,7 @@ int gmoTimelineOptions() {
 			"11. 2003 - GMO-Resistant Pests\n\n"
 			"12. 2011 - Bt Toxin in Humans\n\n"
 			"13. 2012 - Farmer Wins Court Battle\n\n"
-			"14. 2014 - GMO Patent Expires\n\n" << "15. " << 
+			"14. 2014 - GMO Patent Expires\n\n" << "15. " <<
 			back << "\n\n";
 	if (invalid) {
 		cout << "Please enter a valid option!\n\n";
@@ -349,7 +177,7 @@ int gmoTimelineOptions() {
 		cin.get();
 		system("clear");
 		gmoTimelineOptions();
-	} else 
+	} else
 	if (selection == "13") {
 		invalid = false;
 		system("clear");
@@ -380,7 +208,7 @@ int gmoTimelineOptions() {
 		cin.get();
 		system("clear");
 		gmoTimelineOptions();
-	} else 
+	} else
 	if (selection == "15") {
 		invalid = false;
 		system("clear");
@@ -446,7 +274,7 @@ int bcOptions(int option) {
 	if (option == 3) { // Chemical Structures
 		cout << chemStrucText;
 		cout << "Birth control are mostly made of two compounds. Estradiol and Progesterone.\n";
-		cin.ignore();	
+		cin.ignore();
 		cin.get();
 		cout << "These are naturally-occuring enzymes in female bodies, but the pill has them modified to achieve its specific purpose.\n";
 		cin.get();
@@ -485,7 +313,7 @@ int abOptions(int option) {
 		cin.get();
 		system("clear");
 		antibiotics();
-	} else 
+	} else
 	if (option == 2) { // Most common diseases treated by antibiotics
 		cout << ab2Text;
 		cout << "The 10 most common diseases that are treated by antibiotics are: \n\n";
@@ -543,7 +371,7 @@ int gmoOptions(int option) {
 		cin.get();
 		system("clear");
 		GMO();
-	} else 
+	} else
 	if (option == 2) { // Timeline
 		// cout timeline text
 		cout << "1935 - DNA Discovered";
@@ -616,7 +444,7 @@ int birthControlMenu() {
 	if (selection == "1") {
 		system ("clear");
 		bcOptions(1);
-	} else 
+	} else
 	if (selection == "2") {
 		system ("clear");
 		bcOptions(2);
@@ -634,7 +462,7 @@ int birthControlMenu() {
 		// DISPLAY MENU [START]
 		cout << "Select an option.\n\n";
 		cout << "1. " << bcOne << "\n"
-				"2. " << bcTwo << "\n" 
+				"2. " << bcTwo << "\n"
 				"3. " << bcThree << "\n"
 				"4. " << back << "\n\n";
 		// DISPLAY MENU [END]
@@ -648,7 +476,7 @@ int antibioticsMenu() {
 	if (selection == "1") {
 		system ("clear");
 		abOptions(1);
-	} else 
+	} else
 	if (selection == "2") {
 		system ("clear");
 		abOptions(2);
@@ -666,7 +494,7 @@ int antibioticsMenu() {
 		// DISPLAY MENU [START]
 		cout << "Select an option.\n\n";
 		cout << "1. " << abOne << "\n"
-				"2. " << abTwo << "\n" 
+				"2. " << abTwo << "\n"
 				"3. " << abThree << "\n"
 				"4. " << back << "\n\n";
 		// DISPLAY MENU [END]
@@ -680,7 +508,7 @@ int gmoMenu() {
 	if (selection == "1") {
 		system ("clear");
 		gmoOptions(1);
-	} else 
+	} else
 	if (selection == "2") {
 		system ("clear");
 		gmoOptions(2);
@@ -698,7 +526,7 @@ int gmoMenu() {
 		// DISPLAY MENU [START]
 		cout << "Select an option.\n\n";
 		cout << "1. " << gmoOne << "\n"
-				"2. " << gmoTwo << "\n" 
+				"2. " << gmoTwo << "\n"
 				"3. " << gmoThree << "\n"
 				"4. " << back << "\n\n";
 		// DISPLAY MENU [END]
@@ -774,10 +602,10 @@ int menu() { // Main menu function
 	cout << "Welcome to Owen Hines' chemistry interactive lesson!\n\n";
 	cout << "In this program, you're going to be learning about the role of"
 	" chemistry in the history of human population.\n\n";
-	cout << "There are many ways that chemistry has affected population changes in history.\n\n" 
+	cout << "There are many ways that chemistry has affected population changes in history.\n\n"
 	<< "Please choose what you would like to learn about first.\n\n";
 	cout << "1. " << mainOne << "\n"
-			"2. " << mainTwo << "\n" 
+			"2. " << mainTwo << "\n"
 			"3. " << mainThree << "\n"
 			"4. References\n"
 			"5. " << quit << "\n\n";
@@ -790,7 +618,7 @@ int menu() { // Main menu function
 		system ("clear");
 		invalid = false;
 		birthControl(); // Point to Birth Control Selection Menu
-	} else 
+	} else
 	if (selection == "2") {
 		system ("clear");
 		invalid = false;
