@@ -1,5 +1,7 @@
 # Chemistry project - A history of population in Chemistry
 
+[![Build Status](https://travis-ci.org/TheOdd/Chemistry.svg?branch=master)](https://travis-ci.org/TheOdd/Chemistry)
+
 This project briefly covers the role that Chemistry has had in population growth and decline over the last century. This includes, but is not limited to
 
  - Birth control
