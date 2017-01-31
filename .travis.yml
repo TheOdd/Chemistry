@@ -1,0 +1,3 @@
+language: cpp
+
+script: g++ src/Chem.cpp
