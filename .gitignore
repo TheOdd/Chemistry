@@ -27,3 +27,10 @@
 *.exe
 *.out
 *.app
+Chemistry
+
+# CMake Files
+CMakeCache.txt
+*.cmake
+Makefile
+CMakeFiles/

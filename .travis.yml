@@ -1,3 +1,5 @@
 language: cpp
 
-script: g++ src/Chem.cpp
+script:
+  - cmake .
+  - make
