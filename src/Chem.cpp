@@ -6,7 +6,7 @@
 
 using namespace std;
 
-bool invalid = false;
+bool invalid = true;
 
 int menu();
 int birthControl();
