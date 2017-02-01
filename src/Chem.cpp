@@ -173,18 +173,18 @@ int timeLine(int dashes) {
 
 int bcOptions(int option) {
 	if (option == 1) { // Birth rates
-		cout << bc1Text;
+		cout << bc1Art;
 		cout << bc1Stats1;
 		cout << bcOption1;
 		cin.ignore();
 		cin.get();
 		system("clear");
-		cout << bc1Text;
+		cout << bc1Art;
 		cout << bc1Stats2;
 		cout << bcOption1;
 		cin.get();
 		system("clear");
-		cout << bc1Text;
+		cout << bc1Art;
 		cout << bc1Stats3;
 		cout << bcOption1;
 		cin.get();
@@ -192,7 +192,7 @@ int bcOptions(int option) {
 		birthControl();
 	} else
 	if (option == 2) { // Pricing
-		cout << bc2Text;
+		cout << bc2Art;
 		cout << bc2Stats1;
 		cin.ignore();
 		cin.get();
@@ -206,7 +206,7 @@ int bcOptions(int option) {
 		birthControl();
 	} else
 	if (option == 3) { // Chemical Structures
-		cout << chemStrucText;
+		cout << chemStrucArt;
 		cout << "Birth control are mostly made of two compounds. Estradiol and Progesterone.\n";
 		cin.ignore();
 		cin.get();
@@ -215,14 +215,14 @@ int bcOptions(int option) {
 		cout << "Here are their chemical structures:\n";
 		cin.get();
 		system("clear");
-		cout << chemStrucText;
-		cout << bc3Estradiol;
-		cout << bc3EstradiolChem;
+		cout << chemStrucArt;
+		cout << bc3EstradiolArt;
+		cout << bc3EstradiolChemArt;
 		cin.get();
 		system("clear");
-		cout << chemStrucText;
-		cout << bc3Progesterone;
-		cout << bc3ProgesteroneChem;
+		cout << chemStrucArt;
+		cout << bc3ProgesteroneArt;
+		cout << bc3ProgesteroneChemArt;
 		cin.get();
 		system("clear");
 		birthControl();
@@ -231,7 +231,7 @@ int bcOptions(int option) {
 
 int abOptions(int option) {
 	if (option == 1) { // How it works
-		cout << ab1Text;
+		cout << ab1Art;
 		cout << "Various types of antibiotics work in either of the following two ways:\n";
 		cin.ignore();
 		cin.get();
@@ -243,7 +243,7 @@ int abOptions(int option) {
 		antibiotics();
 	} else
 	if (option == 2) { // Most common diseases treated by antibiotics
-		cout << ab2Text;
+		cout << ab2Art;
 		cout << "The 10 most common diseases that are treated by antibiotics are: \n\n";
 		cout << abOption2;
 		cin.ignore();
@@ -263,7 +263,7 @@ int abOptions(int option) {
 int gmoOptions(int option) {
 	if (option == 1) { // Effects on food supplies
 		system("clear");
-		cout << gmo1Text;
+		cout << gmo1Art;
 		cout << "As the world’s population continues to grow, possibly by two billion by 2050,\n"
 		"and if agriculture’s land resources stay the same or shrink, GM seeds can play a vital\n"
 		"role in feeding the world while improving environmental sustainability. GM seeds can\n"
@@ -345,8 +345,8 @@ int gmoOptions(int option) {
 		cout << "This pesticide was called 'Round Up.' Here's the chemical structure: \n";
 		cin.get();
 		system("clear");
-		cout << gmo3RoundUp;
-		cout << gmo3RoundUpChem;
+		cout << gmo3RoundUpArt;
+		cout << gmo3RoundUpChemArt;
 		cin.get();
 		system("clear");
 		GMO();
@@ -375,7 +375,7 @@ int birthControlMenu() {
 		menu();
 	} else { // <-- If user input something other than 1-4
 		system ("clear");
-		cout << bcText;
+		cout << bcArt;
 		// DISPLAY MENU [START]
 		cout << "Select an option.\n\n";
 		cout << "1. " << bcOne << "\n"
@@ -407,7 +407,7 @@ int antibioticsMenu() {
 		menu();
 	} else { // <-- If user input something other than 1-4
 		system ("clear");
-		cout << abText;
+		cout << abArt;
 		// DISPLAY MENU [START]
 		cout << "Select an option.\n\n";
 		cout << "1. " << abOne << "\n"
@@ -439,7 +439,7 @@ int gmoMenu() {
 		menu();
 	} else { // <-- If user input something other than 1-4
 		system ("clear");
-		cout << gmoText;
+		cout << gmoArt;
 		// DISPLAY MENU [START]
 		cout << "Select an option.\n\n";
 		cout << "1. " << gmoOne << "\n"
@@ -458,7 +458,7 @@ int gmoMenu() {
 ////////////////// START MAIN SUBJECT FUNCTIONS //////////////////
 
 int birthControl() { // Display ASCII Art
-	cout << bcText;
+	cout << bcArt;
 
 	// DISPLAY MENU [START]
 	cout << "Select an option\n\n";
@@ -472,7 +472,7 @@ int birthControl() { // Display ASCII Art
 }
 
 int antibiotics() {
-	cout << abText; // Display ASCII Art
+	cout << abArt; // Display ASCII Art
 
 	// DISPLAY MENU [START]
 	cout << "Select an option\n\n";
@@ -486,7 +486,7 @@ int antibiotics() {
 }
 
 int GMO() {
-	cout << gmoText; // Display ASCII Art
+	cout << gmoArt; // Display ASCII Art
 
 	// DISPLAY MENU [START]
 	cout << "Select an option\n\n";
@@ -500,7 +500,7 @@ int GMO() {
 }
 
 int References() {
-	cout << refText;
+	cout << refArt;
 	cout << "1. http://gmoinside.org/gmo-timeline-a-history-genetically-modified-foods/\n"
 			"2. https://www.plannedparenthood.org/learn/birth-control/birth-control-pill\n"
 			"3. http://www.webmd.com/\n"
