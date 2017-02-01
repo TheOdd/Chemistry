@@ -26,7 +26,7 @@ int gmoTimelineOptions() {
 	if (selection == "1") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption1;
+		cout << gmoTimelineOption1;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -35,7 +35,7 @@ int gmoTimelineOptions() {
 	if (selection == "2") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption2;
+		cout << gmoTimelineOption2;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -44,7 +44,7 @@ int gmoTimelineOptions() {
 	if (selection == "3") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption3;
+		cout << gmoTimelineOption3;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -53,7 +53,7 @@ int gmoTimelineOptions() {
 	if (selection == "4") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption4;
+		cout << gmoTimelineOption4;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -62,7 +62,7 @@ int gmoTimelineOptions() {
 	if (selection == "5") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption5;
+		cout << gmoTimelineOption5;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -71,7 +71,7 @@ int gmoTimelineOptions() {
 	if (selection == "6") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption6;
+		cout << gmoTimelineOption6;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -80,7 +80,7 @@ int gmoTimelineOptions() {
 	if (selection == "7") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption7;
+		cout << gmoTimelineOption7;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -89,7 +89,7 @@ int gmoTimelineOptions() {
 	if (selection == "8") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption8;
+		cout << gmoTimelineOption8;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -98,7 +98,7 @@ int gmoTimelineOptions() {
 	if (selection == "9") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption9;
+		cout << gmoTimelineOption9;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -107,7 +107,7 @@ int gmoTimelineOptions() {
 	if (selection == "10") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption10;
+		cout << gmoTimelineOption10;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -116,7 +116,7 @@ int gmoTimelineOptions() {
 	if (selection == "11") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption11;
+		cout << gmoTimelineOption11;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -125,7 +125,7 @@ int gmoTimelineOptions() {
 	if (selection == "12") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption12;
+		cout << gmoTimelineOption12;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -134,7 +134,7 @@ int gmoTimelineOptions() {
 	if (selection == "13") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption13;
+		cout << gmoTimelineOption13;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -143,7 +143,7 @@ int gmoTimelineOptions() {
 	if (selection == "14") {
 		invalid = false;
 		system("clear");
-		cout << gmoOption14;
+		cout << gmoTimelineOption14;
 		cin.ignore();
 		cin.get();
 		system("clear");
@@ -264,27 +264,12 @@ int gmoOptions(int option) {
 	if (option == 1) { // Effects on food supplies
 		system("clear");
 		cout << gmo1Art;
-		cout << "As the world’s population continues to grow, possibly by two billion by 2050,\n"
-		"and if agriculture’s land resources stay the same or shrink, GM seeds can play a vital\n"
-		"role in feeding the world while improving environmental sustainability. GM seeds can\n"
-		"contribute to a reduction in the amount of land, water and chemicals needed to produce more food.\n";
+		cout << gmoOption1_1;
 		cin.ignore();
 		cin.get();
-		cout << "This can contribute greatly to conservation and environmental stewardship.\n"
-		"In particular, GM seeds can help protect the land and keep soil healthy. Additionally,\n"
-		"as seed companies and researchers continue to make new strides in developing crops with\n"
-		"the use of genetic engineering, there are increased opportunities to enhance the nutritional\n"
-		"profile of foods that are important in developing countries that need nutrient-rich food.\n"
-		"About 870 million people are estimated to have been undernourished during the period of 2010–2012.\n"
-		"This represents 12.5% of the global population, or one in eight people. The vast majority of\n"
-		"these 870 million people live in developing countries, where the prevalence of undernourishment\n"
-		"is now estimated at 14.9% of the population.\n";
+		cout << gmoOption1_2;
 		cin.get();
-		cout << "Today, according to ISAAA (The International Service for the Acquisition of Agri-Biotech Applications),\n"
-		"GM seeds provide extensive benefits to small farmers around the world. More than 90% of farmers\n"
-		"who use GMOs globally are small farmers or people who resource poor farmers in developing countries.\n"
-		"For the first time, more than half, 52%, of GM crops were grown in developing nations versus 48% for\n"
-		"industrialized countries (ISAAA).\n\n";
+		cout << gmoOption1_3;
 		cin.get();
 		system("clear");
 		GMO();
