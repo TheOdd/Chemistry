@@ -19,10 +19,8 @@ string bcThree = "Chemical structures";
 
 // BIRTH CONTROL STATISTIC STRINGS [START]
 string bc2Stats1 = "Birth control can cost anywhere from $0 (insurance coverage) to $50 a month in the United States.\n";
-string bc2Stats2 = "This can be a major factor in whether or not someone gets the birth control pills, and therefore can affect parts\n"
-				   "of a population, while not touching other areas.\n";
-string bc2Stats3 = "In the United States 98% of women have used birth control at some point in time and 62% of those of reproductive\n"
-				   "age are currently using birth control.\n";
+string bc2Stats2 = "This can be a major factor in whether or not someone gets the birth control pills, and therefore can affect parts\nof a population, while not touching other areas.\n";
+string bc2Stats3 = "In the United States 98% of women have used birth control at some point in time and 62% of those of reproductive\nage are currently using birth control.\n";
 string bc2Stats4 = "These percentages could very easily increase or decrease, resulting in less or more births, if the prices change.\n";
 // BIRTH CONTROL STATISTIC STRINGS [END]
 

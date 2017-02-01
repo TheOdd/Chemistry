@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/TheOdd/Chemistry.svg?branch=master)](https://travis-ci.org/TheOdd/Chemistry)
 
-## Current lines of code: 722
+## Current lines of code: 720
 
 This project briefly covers the role that Chemistry has had in population growth and decline over the last century. This includes, but is not limited to
 
