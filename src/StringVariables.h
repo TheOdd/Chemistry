@@ -38,7 +38,7 @@ string gmoTwo = "Timeline";
 string gmoThree = "Chemical structures";
 // GMO MENU LIST VARIABLES [END]
 
-// GMO STRING OPTIONS
+// GMO STRING OPTIONS [START]
 string gmoAdditionalOptionsPrompt = "Would you like to learn more about any of the dates?\n\n\n";
 string gmoAdditionalOptionsString = "1. 1935 - DNA Discovered\n\n2. 1953 - Double Helix structure in DNA discovered\n\n3. 1973 - Recombinant DNA Created\n\n4. 1975 - Asilomar Conference\n\n5. 1980 - First GMO Patent Issued\n\n6. 1982 - FDA Approves First GMO\n\n7. 1994 - GMO Hits Grocery Stores\n\n8. 1996 - GMO-Resistant Weeds\n\n9. 1997 - Mandatory Labels\n\n10. 1999 - GMO Food Crops Dominate\n\n11. 2003 - GMO-Resistant Pests\n\n12. 2011 - Bt Toxin in Humans\n\n13. 2012 - Farmer Wins Court Battle\n\n14. 2014 - GMO Patent Expires\n\n";
 string gmoOption1 = "Russian scientist Andrei Nikolaevitch Belozersky isolates pure DNA.\n\n";
@@ -55,3 +55,14 @@ string gmoOption11 = "In 2003, a Bt-toxin-resistant caterpillar-cum-moth, Helico
 string gmoOption12 = "Research in eastern Quebec finds Bt toxins in the blood of pregnant women and shows evidence that the toxin is passed to fetuses.\n\n";
 string gmoOption13 = "French farmer Paul Francois sues Monsanto for chemical poisoning he claims was caused by its pesticide Lasso,\npart of the Roundup Ready line of products. Francois wins and sets a new precedent for future cases.\n\n";
 string gmoOption14 = "Monsanto’s patent on the Roundup Ready line of genetically engineered seeds will end in two years.\nIn 2009, Monsanto introduced Roundup 2 with a new patent set to make the first-generation seed obsolete.\n\n";
+// GMO STRING OPTIONS [END]
+
+// BIRTH CONTROL OPTIONS [START]
+string bcOption1 = "* Rates are per 1,000 population estimated as of July 1 for each year except\n1940, 1950, and 1960 which are as of April 1, the census date; for 1942–46\nbased on population including armed forces overseas.\n";
+string bcOption2_1 = "1. A Bactericidal antibiotic kills the bacteria generally by either\ninterfering with the formation of the bacterium's cell wall or its cell contents.\nPenicillin, daptomycin, fluoroquinolones, metronidazole, nitrofurantoin and co-trimoxazole\nare some example of Bactericidal antibiotics.\n";
+string bcOption2_2 = "2. A Bacteriostatic antibiotic stops bacteria from multiplying by interfering with\nbacterial protein production, DNA replication, or other aspects of bacterial cellular metabolism.\nSome Bacteriostatic antibiotics are tetracyclines, sulphonamides, spectinomycin, trimethoprim,\nchloramphenicol, macrolides and lincosamides.\n\n";
+// BIRTH CONTROL OPTIONS [END]
+
+// ANTIBIOTICS STRING OPTIONS [START]
+string abOption2 = "1. Acne \n\n2. Bronchitis \n\n3. Conjunctivitis (Pink Eye) \n\n4. Otitis Media (Ear Infection) \n\n5. Sexually Transmitted Diseases (STD’s) \n\n6. Skin or Soft Tissue infections \n\n7. Streptococcal Pharyngitis (Strep Throat) \n\n8. Traveler’s diarrhea \n\n9. Upper Respiratory Tract Infection \n\n10. Urinary Tract Infection (UTI) \n\n";
+string abOption3 = "Amoxicillin, a common antibiotic used to treat numerous generic infections and diseases, has this chemical structure:\n\nC₁₆H₁₉N₃O₅S\n\nThis means that there are 16 Carbon atoms, 19 Hydrogen atoms, 3 Nitrogen atoms, 5 Oxygen atoms, and one Sulfur atom.\n\n";

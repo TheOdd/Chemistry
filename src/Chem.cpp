@@ -175,24 +175,18 @@ int bcOptions(int option) {
 	if (option == 1) { // Birth rates
 		cout << bc1Text;
 		cout << bc1Stats1;
-		cout << "* Rates are per 1,000 population estimated as of July 1 for each year except\n"
-		"1940, 1950, and 1960 which are as of April 1, the census date; for 1942–46\n"
-		"based on population including armed forces overseas.\n";
+		cout << bcOption1;
 		cin.ignore();
 		cin.get();
 		system("clear");
 		cout << bc1Text;
 		cout << bc1Stats2;
-		cout << "* Rates are per 1,000 population estimated as of July 1 for each year except\n"
-		"1940, 1950, and 1960 which are as of April 1, the census date; for 1942–46\n"
-		"based on population including armed forces overseas.\n";
+		cout << bcOption1;
 		cin.get();
 		system("clear");
 		cout << bc1Text;
 		cout << bc1Stats3;
-		cout << "* Rates are per 1,000 population estimated as of July 1 for each year except\n"
-		"1940, 1950, and 1960 which are as of April 1, the census date; for 1942–46\n"
-		"based on population including armed forces overseas.\n";
+		cout << bcOption1;
 		cin.get();
 		system("clear");
 		birthControl();
@@ -241,15 +235,9 @@ int abOptions(int option) {
 		cout << "Various types of antibiotics work in either of the following two ways:\n";
 		cin.ignore();
 		cin.get();
-		cout << "1. A Bactericidal antibiotic kills the bacteria generally by either\n"
-		"interfering with the formation of the bacterium's cell wall or its cell contents.\n"
-		"Penicillin, daptomycin, fluoroquinolones, metronidazole, nitrofurantoin and co-trimoxazole\n"
-		"are some example of Bactericidal antibiotics.\n";
+		cout << bcOption2_1;
 		cin.get();
-		cout << "2. A Bacteriostatic antibiotic stops bacteria from multiplying by interfering with\n"
-		"bacterial protein production, DNA replication, or other aspects of bacterial cellular metabolism.\n"
-		"Some Bacteriostatic antibiotics are tetracyclines, sulphonamides, spectinomycin, trimethoprim,\n"
-		"chloramphenicol, macrolides and lincosamides.\n\n";
+		cout << bcOption2_2;
 		cin.get();
 		system("clear");
 		antibiotics();
@@ -257,25 +245,14 @@ int abOptions(int option) {
 	if (option == 2) { // Most common diseases treated by antibiotics
 		cout << ab2Text;
 		cout << "The 10 most common diseases that are treated by antibiotics are: \n\n";
-		cout << "1. Acne \n\n"
-				"2. Bronchitis \n\n"
-				"3. Conjunctivitis (Pink Eye) \n\n"
-				"4. Otitis Media (Ear Infection) \n\n"
-				"5. Sexually Transmitted Diseases (STD’s) \n\n"
-				"6. Skin or Soft Tissue infections \n\n"
-				"7. Streptococcal Pharyngitis (Strep Throat) \n\n"
-				"8. Traveler’s diarrhea \n\n"
-				"9. Upper Respiratory Tract Infection \n\n"
-				"10. Urinary Tract Infection (UTI) \n\n";
+		cout << abOption2;
 		cin.ignore();
 		cin.get();
 		system("clear");
 		antibiotics();
 	} else
 	if (option == 3) { // Chemical Structures
-		cout << "Amoxicillin, a common antibiotic used to treat numerous generic infections and diseases, has this chemical structure:\n\n"
-				"C₁₆H₁₉N₃O₅S\n\n"
-				"This means that there are 16 Carbon atoms, 19 Hydrogen atoms, 3 Nitrogen atoms, 5 Oxygen atoms, and one Sulfur atom.\n\n";
+		cout << abOption3;
 		cin.ignore();
 		cin.get();
 		system("clear");
