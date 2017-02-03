@@ -502,14 +502,14 @@ int menu() { // Main menu function
     system ("clear");
     // DISPLAY MENU [START]
     cout << "Welcome to Owen Hines' chemistry interactive lesson!\n\n";
-    cout << "In this program, you're going to be learning about the role of"
-    " chemistry in the history of human population.\n\n";
+    cout << "In this program, you're going to be learning about the role of "
+    "chemistry in the history of human population.\n\n";
     cout << "There are many ways that chemistry has affected population changes in history.\n\n"
     << "Please choose what you would like to learn about first.\n\n";
     cout << "1. " << mainOne << "\n"
             "2. " << mainTwo << "\n"
             "3. " << mainThree << "\n"
-            "4. References\n"
+            "4." << mainFour << "\n"
             "5. " << quit << "\n\n";
     if(invalid) {
         cout << "Please enter a valid option!\n\n"; // Display error when user gives invalid option

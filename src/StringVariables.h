@@ -9,6 +9,7 @@ string back = "Go back"; // Back string used genericly across all menus (excludi
 string mainOne = "Birth Control";
 string mainTwo = "Antibiotics";
 string mainThree = "GMO's (Genetically Modified Organisms)";
+string mainFour = "References";
 // MAIN MENU LIST VARIABLES [END]
 
 // BIRTH CONTROL MENU LIST VARIABLES [START]
