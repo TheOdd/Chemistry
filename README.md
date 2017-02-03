@@ -44,3 +44,7 @@ Finally, to run the program do
     ./Chemistry
 
 You're all set now!
+
+### Note about Update_LOC script
+
+If you want to use the `Update_LOC` script included in this repository, you must have the `loc` package installed. If you don't have it installed, you can get it [here](https://github.com/cgag/loc).
