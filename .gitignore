@@ -28,7 +28,6 @@
 *.out
 *.app
 Chemistry
-Update_LOC
 
 # CMake Files
 CMakeCache.txt

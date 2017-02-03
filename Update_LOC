@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd src
+
+linecount=$(loc | grep 'Total' | grep -Po '\d+$')
+
+cd ..
+
+sed -i -E "s/(## Current lines of code: )[[:digit:]]+/\1$linecount/" README.md
+
+/bin/echo -e "\033[32mUpdated README.md to display $linecount lines.\033[39m";

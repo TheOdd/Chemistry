@@ -3,7 +3,6 @@
 #include <unistd.h>
 #include "ASCII_Art.h"
 #include "StringVariables.h"
-#include "Functions.h"
 
 using namespace std;
 
@@ -158,6 +157,15 @@ int gmoTimelineOptions() {
         invalid = true;
         system("clear");
         gmoTimelineOptions();
+    }
+}
+
+// Function for easier animation for timeline GMO
+
+int timeLine(int dashes) {
+    for (int i = 0; i < dashes; i++) {
+        usleep(300000);
+        cout << "|\n";
     }
 }
 
