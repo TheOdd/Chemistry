@@ -1,6 +1,6 @@
 # Chemistry project - A history of population in Chemistry
 
-[![Build Status](https://travis-ci.org/TheOdd/Chemistry.svg?branch=master)](https://travis-ci.org/TheOdd/Chemistry)
+[![Build Status](https://travis-ci.com/TheOdd/Chemistry.svg?token=dfSE1qYjxpgtga9sUFaC&branch=master)](https://travis-ci.com/TheOdd/Chemistry)
 
 ## Current lines of code: 720
 
