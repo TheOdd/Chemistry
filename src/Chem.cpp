@@ -229,21 +229,14 @@ int gmoOptions(int option) {
 ////////////////// START MAIN SUBJECT MENU HANDLERS //////////////////
 
 int birthControlMenu() {
-    if (selection == "1") {
-        system ("clear");
-        bcOptions(1);
-    } else
-    if (selection == "2") {
-        system ("clear");
-        bcOptions(2);
-    } else
-    if (selection == "3") {
-        system ("clear");
-        bcOptions(3);
-    } else
-    if (selection == "4") {
-        system ("clear");
-        menu();
+    cin >> selection;
+    selectionInt = stoi(selection);
+    if (selectionInt < 4 && selectionInt > 0) {
+      system ("clear");
+      bcOptions(selectionInt);
+    } else if (selectionInt == 4) {
+      system ("clear");
+      menu();
     } else { // <-- If user input something other than 1-4
         system ("clear");
         cout << bcArt;
@@ -255,7 +248,6 @@ int birthControlMenu() {
                 "4. " << back << "\n\n";
         // DISPLAY MENU [END]
         cout << "Please enter a valid option!\n\n"; // Display error when user gives invalid option
-        cin >> selection;
         birthControlMenu(); // Re-initializes menu function for option select
     }
 }
@@ -338,7 +330,6 @@ int birthControl() { // Display ASCII Art
             "3. " << bcThree << "\n"
             "4. " << back << "\n\n";
     // DISPLAY MENU [END]
-    cin >> selection;
     birthControlMenu();
 }
 
