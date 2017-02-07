@@ -16,9 +16,9 @@ Please make sure you have all of the required dependencies before attempting to 
 
 After that, you can check your g++ version with
 
-    gcc --version | grep gcc
+    gcc --version | grep gcc | grep -Po '\d.+$'
 
-Look for the number that has three dot points. For example, 5.2.0 or 6.2.3, etc.
+Look for the number that has two dot points. For example, 5.2.0 or 6.2.3, etc.
 
 If your number is lower than 6.0.0, then you must update in order to compile.
 
