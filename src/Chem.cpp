@@ -486,11 +486,11 @@ int GMO() {
 
 int References() {
     cout << refArt;
-    cout << "1. http://gmoinside.org/gmo-timeline-a-history-genetically-modified-foods/\n"
-            "2. https://www.plannedparenthood.org/learn/birth-control/birth-control-pill\n"
-            "3. http://www.webmd.com/\n"
-            "4. http://www.infoplease.com/ipa/A0005067.html\n"
-            "5. http://www.pbs.org/newshour/rundown/the-real-story-behind-the-worlds-first-antibiotic/\n\n";
+    cout << "1. " << ref1 <<
+            "2. " << ref2 <<
+            "3. " << ref3 <<
+            "4. " << ref4 <<
+            "5. " << ref5;
     cin.ignore();
     cin.get();
     menu();
@@ -501,15 +501,15 @@ int References() {
 int menu() { // Main menu function
     system ("clear");
     // DISPLAY MENU [START]
-    cout << "Welcome to Owen Hines' chemistry interactive lesson!\n\n";
-    cout << "In this program, you're going to be learning about the role of "
-    "chemistry in the history of human population.\n\n";
-    cout << "There are many ways that chemistry has affected population changes in history.\n\n"
-    << "Please choose what you would like to learn about first.\n\n";
+    cout << "Welcome to Owen Hines' chemistry interactive lesson!\n\n"
+    "In this program, you're going to be learning about the role of "
+    "chemistry in the history of human population.\n\n"
+    "There are many ways that chemistry has affected population changes in history.\n\n"
+    "Please choose what you would like to learn about first.\n\n";
     cout << "1. " << mainOne << "\n"
             "2. " << mainTwo << "\n"
             "3. " << mainThree << "\n"
-            "4." << mainFour << "\n"
+            "4. " << mainFour << "\n"
             "5. " << quit << "\n\n";
     if(invalid) {
         cout << "Please enter a valid option!\n\n"; // Display error when user gives invalid option

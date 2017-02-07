@@ -71,3 +71,12 @@ string bcOption2_2 = "2. A Bacteriostatic antibiotic stops bacteria from multipl
 // ANTIBIOTICS STRING OPTIONS [START]
 string abOption2 = "1. Acne \n\n2. Bronchitis \n\n3. Conjunctivitis (Pink Eye) \n\n4. Otitis Media (Ear Infection) \n\n5. Sexually Transmitted Diseases (STD’s) \n\n6. Skin or Soft Tissue infections \n\n7. Streptococcal Pharyngitis (Strep Throat) \n\n8. Traveler’s diarrhea \n\n9. Upper Respiratory Tract Infection \n\n10. Urinary Tract Infection (UTI) \n\n";
 string abOption3 = "Amoxicillin, a common antibiotic used to treat numerous generic infections and diseases, has this chemical structure:\n\nC₁₆H₁₉N₃O₅S\n\nThis means that there are 16 Carbon atoms, 19 Hydrogen atoms, 3 Nitrogen atoms, 5 Oxygen atoms, and one Sulfur atom.\n\n";
+// ANTIBIOTICS STRING OPTIONS [END]
+
+// REFERENCES LIST STRINGS [START]
+string ref1 = "http://gmoinside.org/gmo-timeline-a-history-genetically-modified-foods/\n";
+string ref2 = "https://www.plannedparenthood.org/learn/birth-control/birth-control-pill\n";
+string ref3 = "http://www.webmd.com/\n";
+string ref4 = "http://www.infoplease.com/ipa/A0005067.html\n";
+string ref5 = "http://www.pbs.org/newshour/rundown/the-real-story-behind-the-worlds-first-antibiotic/\n\n";
+// REFERENCES LIST STRINGS [END]
