@@ -80,3 +80,37 @@ string ref3 = "http://www.webmd.com/\n";
 string ref4 = "http://www.infoplease.com/ipa/A0005067.html\n";
 string ref5 = "http://www.pbs.org/newshour/rundown/the-real-story-behind-the-worlds-first-antibiotic/\n\n";
 // REFERENCES LIST STRINGS [END]
+
+// Function to grab specific string based on option input. [START]
+string gmoTimelineOptionString(int option)
+{
+  if (option == 1)
+    return gmoTimelineOption1;
+  else if (option == 2)
+    return gmoTimelineOption2;
+  else if (option == 3)
+    return gmoTimelineOption3;
+  else if (option == 4)
+    return gmoTimelineOption4;
+  else if (option == 5)
+    return gmoTimelineOption5;
+  else if (option == 6)
+    return gmoTimelineOption6;
+  else if (option == 7)
+    return gmoTimelineOption7;
+  else if (option == 8)
+    return gmoTimelineOption8;
+  else if (option == 9)
+    return gmoTimelineOption9;
+  else if (option == 10)
+    return gmoTimelineOption10;
+  else if (option == 11)
+    return gmoTimelineOption11;
+  else if (option == 12)
+    return gmoTimelineOption12;
+  else if (option == 13)
+    return gmoTimelineOption13;
+  else if (option == 14)
+    return gmoTimelineOption14;
+}
+// Function to grab specific string based on option input. [END]

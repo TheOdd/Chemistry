@@ -14,6 +14,7 @@ int GMO();
 int antibiotics();
 
 string selection; // Variable used to store all menu inputs from user.
+int selectionInt;
 
 int gmoTimelineOptions() {
     cout << gmoAdditionalOptionsPrompt;
@@ -23,133 +24,18 @@ int gmoTimelineOptions() {
         cout << "Please enter a valid option!\n\n";
     }
     cin >> selection;
-    if (selection == "1") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption1;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
+    selectionInt = stoi(selection);
+    if (selectionInt < 15 && selectionInt > 0)
+    {
+      invalid = false;
+      system("clear");
+      cout << gmoTimelineOptionString(selectionInt);
+      cin.ignore();
+      cin.get();
+      system("clear");
+      gmoTimelineOptions();
     } else
-    if (selection == "2") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption2;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "3") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption3;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "4") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption4;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "5") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption5;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "6") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption6;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "7") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption7;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "8") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption8;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "9") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption9;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "10") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption10;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "11") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption11;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "12") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption12;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "13") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption13;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "14") {
-        invalid = false;
-        system("clear");
-        cout << gmoTimelineOption14;
-        cin.ignore();
-        cin.get();
-        system("clear");
-        gmoTimelineOptions();
-    } else
-    if (selection == "15") {
+    if (selectionInt == 15) {
         invalid = false;
         system("clear");
         GMO();
