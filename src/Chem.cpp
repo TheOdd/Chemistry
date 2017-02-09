@@ -1,8 +1,4 @@
-#include <iostream>
-#include <stdlib.h>
-#include <unistd.h>
-#include "ASCII_Art.h"
-#include "StringVariables.h"
+#include "Chem.h"
 
 using namespace std;
 
@@ -46,7 +42,7 @@ int gmoTimelineOptions() {
     }
 }
 
-// Function for easier animation for timeline GMO
+// Function for timeline animation
 
 int timeLine(int dashes) {
     cin.get();
