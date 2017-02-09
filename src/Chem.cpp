@@ -49,6 +49,7 @@ int gmoTimelineOptions() {
 // Function for easier animation for timeline GMO
 
 int timeLine(int dashes) {
+    cin.get();
     for (int i = 0; i < dashes; i++) {
         usleep(300000);
         cout << "|\n";
@@ -164,46 +165,32 @@ int gmoOptions(int option) {
         // cout timeline text
         cout << "1935 - DNA Discovered";
         cin.ignore();
-        cin.get();
         timeLine(19);
         cout << "1953 - Double Helix structure in DNA discovered";
-        cin.get();
         timeLine(20);
         cout << "1973 - Recombinant DNA Created";
-        cin.get();
         timeLine(2);
         cout << "1975 - Asilomar Conference";
-        cin.get();
         timeLine(5);
         cout << "1980 - First GMO Patent Issued";
-        cin.get();
         timeLine(2);
         cout << "1982 - FDA Approves First GMO";
-        cin.get();
         timeLine(12);
         cout << "1994 - GMO Hits Grocery Stores";
-        cin.get();
         timeLine(2);
         cout << "1996 - GMO-Resistant Weeds";
-        cin.get();
         timeLine(1);
         cout << "1997 - Mandatory Labels";
-        cin.get();
         timeLine(2);
         cout << "1999 - GMO Food Crops Dominate";
-        cin.get();
         timeLine(4);
         cout << "2003 - GMO-Resistant Pests";
-        cin.get();
         timeLine(8);
         cout << "2011 - Bt Toxin in Humans";
-        cin.get();
         timeLine(1);
         cout << "2012 - Farmer Wins Court Battle";
-        cin.get();
         timeLine(2);
         cout << "2014 - GMO Patent Expires";
-        cin.get();
         system("clear");
         gmoTimelineOptions();
     } else
