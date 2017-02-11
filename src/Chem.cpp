@@ -361,11 +361,7 @@ int References() {
 int menu() { // Main menu function
     system ("clear");
     // DISPLAY MENU [START]
-    cout << "Welcome to Owen Hines' chemistry interactive lesson!\n\n"
-    "In this program, you're going to be learning about the role of "
-    "chemistry in the history of human population.\n\n"
-    "There are many ways that chemistry has affected population changes in history.\n\n"
-    "Please choose what you would like to learn about first.\n\n";
+    cout << welcomeString;
     cout << "1. " << mainOne << "\n"
             "2. " << mainTwo << "\n"
             "3. " << mainThree << "\n"

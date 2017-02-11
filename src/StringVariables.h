@@ -81,6 +81,10 @@ string ref4 = "http://www.infoplease.com/ipa/A0005067.html\n";
 string ref5 = "http://www.pbs.org/newshour/rundown/the-real-story-behind-the-worlds-first-antibiotic/\n\n";
 // REFERENCES LIST STRINGS [END]
 
+// STRINGS FOR MAIN SCREEN [START]
+string welcomeString = "Welcome to Owen Hines' chemistry interactive lesson!\n\nIn this program, you're going to be learning about the role of chemistry in the history of human population.\n\nThere are many ways that chemistry has affected population changes in history.\n\nPlease choose what you would like to learn about first.\n\n";
+// STRINGS FOR MAIN SCREEN [END]
+
 // Function to grab specific string based on option input. [START]
 string gmoTimelineOptionString(int option)
 {
