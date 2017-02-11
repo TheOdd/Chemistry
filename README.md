@@ -9,6 +9,8 @@ This project briefly covers the role that Chemistry has had in population growth
  - Birth control
  - Antibiotics
  - GMO's
+ 
+## Installation
 
 Please make sure you have all of the required dependencies before attempting to compile. You can do so by using
 
