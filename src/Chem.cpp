@@ -1,7 +1,5 @@
 #include "Chem.h"
 
-using namespace std;
-
 bool invalid = false;
 
 int menu();
@@ -9,25 +7,25 @@ int birthControl();
 int GMO();
 int antibiotics();
 
-string selection; // Variable used to store all menu inputs from user.
+std::string selection; // Variable used to store all menu inputs from user.
 int selectionInt;
 
 int gmoTimelineOptions() {
-    cout << gmoAdditionalOptionsPrompt;
-    cout << gmoAdditionalOptionsString;
-    cout <<  "15. " << back << "\n\n";
+    std::cout << gmoAdditionalOptionsPrompt;
+    std::cout << gmoAdditionalOptionsString;
+    std::cout <<  "15. " << back << std::endl << std::endl;
     if (invalid) {
-        cout << "Please enter a valid option!\n\n";
+        std::cout << "Please enter a valid option!" << std::endl << std::endl;
     }
-    cin >> selection;
+    std::cin >> selection;
     selectionInt = stoi(selection);
     if (selectionInt < 15 && selectionInt > 0)
     {
       invalid = false;
       system("clear");
-      cout << gmoTimelineOptionString(selectionInt);
-      cin.ignore();
-      cin.get();
+      std::cout << gmoTimelineOptionString(selectionInt);
+      std::cin.ignore();
+      std::cin.get();
       system("clear");
       gmoTimelineOptions();
     } else
@@ -45,10 +43,10 @@ int gmoTimelineOptions() {
 // Function for timeline animation
 
 int timeLine(int dashes) {
-    cin.get();
+    std::cin.get();
     for (int i = 0; i < dashes; i++) {
         usleep(300000);
-        cout << "|\n";
+        std::cout << "|" << std::endl;
     }
 }
 
@@ -56,57 +54,57 @@ int timeLine(int dashes) {
 
 int bcOptions(int option) {
     if (option == 1) { // Birth rates
-        cout << bc1Art;
-        cout << bc1Stats1;
-        cout << bcOption1;
-        cin.ignore();
-        cin.get();
+        std::cout << bc1Art;
+        std::cout << bc1Stats1;
+        std::cout << bcOption1;
+        std::cin.ignore();
+        std::cin.get();
         system("clear");
-        cout << bc1Art;
-        cout << bc1Stats2;
-        cout << bcOption1;
-        cin.get();
+        std::cout << bc1Art;
+        std::cout << bc1Stats2;
+        std::cout << bcOption1;
+        std::cin.get();
         system("clear");
-        cout << bc1Art;
-        cout << bc1Stats3;
-        cout << bcOption1;
-        cin.get();
+        std::cout << bc1Art;
+        std::cout << bc1Stats3;
+        std::cout << bcOption1;
+        std::cin.get();
         system("clear");
         birthControl();
     } else
-    if (option == 2) { // Pricing
-        cout << bc2Art;
-        cout << bc2Stats1;
-        cin.ignore();
-        cin.get();
-        cout << bc2Stats2;
-        cin.get();
-        cout << bc2Stats3;
-        cin.get();
-        cout << bc2Stats4;
-        cin.get();
+    if (option == 2) { // Pristd::cing
+        std::cout << bc2Art;
+        std::cout << bc2Stats1;
+        std::cin.ignore();
+        std::cin.get();
+        std::cout << bc2Stats2;
+        std::cin.get();
+        std::cout << bc2Stats3;
+        std::cin.get();
+        std::cout << bc2Stats4;
+        std::cin.get();
         system("clear");
         birthControl();
     } else
     if (option == 3) { // Chemical Structures
-        cout << chemStrucArt;
-        cout << "Birth control are mostly made of two compounds. Estradiol and Progesterone.\n";
-        cin.ignore();
-        cin.get();
-        cout << "These are naturally-occuring enzymes in female bodies, but the pill has them modified to achieve its specific purpose.\n";
-        cin.get();
-        cout << "Here are their chemical structures:\n";
-        cin.get();
+        std::cout << chemStrucArt;
+        std::cout << "Birth control are mostly made of two compounds. Estradiol and Progesterone." << std::endl;
+        std::cin.ignore();
+        std::cin.get();
+        std::cout << "These are naturally-occuring enzymes in female bodies, but the pill has them modified to achieve its specific purpose." << std::endl;
+        std::cin.get();
+        std::cout << "Here are their chemical structures:" << std::endl;
+        std::cin.get();
         system("clear");
-        cout << chemStrucArt;
-        cout << bc3EstradiolArt;
-        cout << bc3EstradiolChemArt;
-        cin.get();
+        std::cout << chemStrucArt;
+        std::cout << bc3EstradiolArt;
+        std::cout << bc3EstradiolChemArt;
+        std::cin.get();
         system("clear");
-        cout << chemStrucArt;
-        cout << bc3ProgesteroneArt;
-        cout << bc3ProgesteroneChemArt;
-        cin.get();
+        std::cout << chemStrucArt;
+        std::cout << bc3ProgesteroneArt;
+        std::cout << bc3ProgesteroneChemArt;
+        std::cin.get();
         system("clear");
         birthControl();
     }
@@ -114,30 +112,30 @@ int bcOptions(int option) {
 
 int abOptions(int option) {
     if (option == 1) { // How it works
-        cout << ab1Art;
-        cout << "Various types of antibiotics work in either of the following two ways:\n";
-        cin.ignore();
-        cin.get();
-        cout << bcOption2_1;
-        cin.get();
-        cout << bcOption2_2;
-        cin.get();
+        std::cout << ab1Art;
+        std::cout << "Various types of antibiotics work in either of the following two ways:" << std::endl;
+        std::cin.ignore();
+        std::cin.get();
+        std::cout << bcOption2_1;
+        std::cin.get();
+        std::cout << bcOption2_2;
+        std::cin.get();
         system("clear");
         antibiotics();
     } else
     if (option == 2) { // Most common diseases treated by antibiotics
-        cout << ab2Art;
-        cout << "The 10 most common diseases that are treated by antibiotics are: \n\n";
-        cout << abOption2;
-        cin.ignore();
-        cin.get();
+        std::cout << ab2Art;
+        std::cout << "The 10 most common diseases that are treated by antibiotics are: " << std::endl << std::endl;
+        std::cout << abOption2;
+        std::cin.ignore();
+        std::cin.get();
         system("clear");
         antibiotics();
     } else
     if (option == 3) { // Chemical Structures
-        cout << abOption3;
-        cin.ignore();
-        cin.get();
+        std::cout << abOption3;
+        std::cin.ignore();
+        std::cin.get();
         system("clear");
         antibiotics();
     }
@@ -146,62 +144,62 @@ int abOptions(int option) {
 int gmoOptions(int option) {
     if (option == 1) { // Effects on food supplies
         system("clear");
-        cout << gmo1Art;
-        cout << gmoOption1_1;
-        cin.ignore();
-        cin.get();
-        cout << gmoOption1_2;
-        cin.get();
-        cout << gmoOption1_3;
-        cin.get();
+        std::cout << gmo1Art;
+        std::cout << gmoOption1_1;
+        std::cin.ignore();
+        std::cin.get();
+        std::cout << gmoOption1_2;
+        std::cin.get();
+        std::cout << gmoOption1_3;
+        std::cin.get();
         system("clear");
         GMO();
     } else
     if (option == 2) { // Timeline
-        // cout timeline text
-        cout << "1935 - DNA Discovered";
-        cin.ignore();
+        // std::cout timeline text
+        std::cout << "1935 - DNA Discovered";
+        std::cin.ignore();
         timeLine(19);
-        cout << "1953 - Double Helix structure in DNA discovered";
+        std::cout << "1953 - Double Helix structure in DNA discovered";
         timeLine(20);
-        cout << "1973 - Recombinant DNA Created";
+        std::cout << "1973 - Recombinant DNA Created";
         timeLine(2);
-        cout << "1975 - Asilomar Conference";
+        std::cout << "1975 - Asilomar Conference";
         timeLine(5);
-        cout << "1980 - First GMO Patent Issued";
+        std::cout << "1980 - First GMO Patent Issued";
         timeLine(2);
-        cout << "1982 - FDA Approves First GMO";
+        std::cout << "1982 - FDA Approves First GMO";
         timeLine(12);
-        cout << "1994 - GMO Hits Grocery Stores";
+        std::cout << "1994 - GMO Hits Grocery Stores";
         timeLine(2);
-        cout << "1996 - GMO-Resistant Weeds";
+        std::cout << "1996 - GMO-Resistant Weeds";
         timeLine(1);
-        cout << "1997 - Mandatory Labels";
+        std::cout << "1997 - Mandatory Labels";
         timeLine(2);
-        cout << "1999 - GMO Food Crops Dominate";
+        std::cout << "1999 - GMO Food Crops Dominate";
         timeLine(4);
-        cout << "2003 - GMO-Resistant Pests";
+        std::cout << "2003 - GMO-Resistant Pests";
         timeLine(8);
-        cout << "2011 - Bt Toxin in Humans";
+        std::cout << "2011 - Bt Toxin in Humans";
         timeLine(1);
-        cout << "2012 - Farmer Wins Court Battle";
+        std::cout << "2012 - Farmer Wins Court Battle";
         timeLine(2);
-        cout << "2014 - GMO Patent Expires";
+        std::cout << "2014 - GMO Patent Expires";
         system("clear");
         gmoTimelineOptions();
     } else
     if (option == 3) { // Chemical Structures
-        cout << "An example of the chemical structure for a GMO is the base formula for a pesticide used in some\n"
-        "plants to make them more resistent.\n";
-        cin.ignore();
-        cin.get();
+        std::cout << "An example of the chemical structure for a GMO is the base formula for a pesticide used in some" << std::endl << 
+        "plants to make them more resistent." << std::endl;
+        std::cin.ignore();
+        std::cin.get();
         system("clear");
-        cout << "This pesticide was called 'Round Up.' Here's the chemical structure: \n";
-        cin.get();
+        std::cout << "This pesticide was called 'Round Up.' Here's the chemical structure: " << std::endl;
+        std::cin.get();
         system("clear");
-        cout << gmo3RoundUpArt;
-        cout << gmo3RoundUpChemArt;
-        cin.get();
+        std::cout << gmo3RoundUpArt;
+        std::cout << gmo3RoundUpChemArt;
+        std::cin.get();
         system("clear");
         GMO();
     }
@@ -212,7 +210,7 @@ int gmoOptions(int option) {
 ////////////////// START MAIN SUBJECT MENU HANDLERS //////////////////
 
 int birthControlMenu() {
-    cin >> selection;
+    std::cin >> selection;
     selectionInt = stoi(selection);
     if (selectionInt < 4 && selectionInt > 0) {
       system ("clear");
@@ -222,15 +220,15 @@ int birthControlMenu() {
       menu();
     } else { // <-- If user input something other than 1-4
         system ("clear");
-        cout << bcArt;
+        std::cout << bcArt;
         // DISPLAY MENU [START]
-        cout << "Select an option.\n\n";
-        cout << "1. " << bcOne << "\n"
-                "2. " << bcTwo << "\n"
-                "3. " << bcThree << "\n"
-                "4. " << back << "\n\n";
+        std::cout << "Select an option." << std::endl << std::endl;
+        std::cout << "1. " << bcOne << std::endl <<
+                "2. " << bcTwo << std::endl <<
+                "3. " << bcThree << std::endl <<
+                "4. " << back << std::endl << std::endl;
         // DISPLAY MENU [END]
-        cout << "Please enter a valid option!\n\n"; // Display error when user gives invalid option
+        std::cout << "Please enter a valid option!" << std::endl << std::endl; // Display error when user gives invalid option
         birthControlMenu(); // Re-initializes menu function for option select
     }
 }
@@ -253,16 +251,16 @@ int antibioticsMenu() {
         menu();
     } else { // <-- If user input something other than 1-4
         system ("clear");
-        cout << abArt;
+        std::cout << abArt;
         // DISPLAY MENU [START]
-        cout << "Select an option.\n\n";
-        cout << "1. " << abOne << "\n"
-                "2. " << abTwo << "\n"
-                "3. " << abThree << "\n"
-                "4. " << back << "\n\n";
+        std::cout << "Select an option." << std::endl << std::endl;
+        std::cout << "1. " << abOne << std::endl <<
+                "2. " << abTwo << std::endl <<
+                "3. " << abThree << std::endl <<
+                "4. " << back << std::endl << std::endl;
         // DISPLAY MENU [END]
-        cout << "Please enter a valid option!\n\n"; // Display error when user gives invalid option
-        cin >> selection;
+        std::cout << "Please enter a valid option!" << std::endl << std::endl; // Display error when user gives invalid option
+        std::cin >> selection;
         antibioticsMenu(); // Re-initializes menu function for option select
     }
 }
@@ -285,16 +283,16 @@ int gmoMenu() {
         menu();
     } else { // <-- If user input something other than 1-4
         system ("clear");
-        cout << gmoArt;
+        std::cout << gmoArt;
         // DISPLAY MENU [START]
-        cout << "Select an option.\n\n";
-        cout << "1. " << gmoOne << "\n"
-                "2. " << gmoTwo << "\n"
-                "3. " << gmoThree << "\n"
-                "4. " << back << "\n\n";
+        std::cout << "Select an option." << std::endl << std::endl;
+        std::cout << "1. " << gmoOne << std::endl <<
+                "2. " << gmoTwo << std::endl <<
+                "3. " << gmoThree << std::endl <<
+                "4. " << back << std::endl << std::endl;
         // DISPLAY MENU [END]
-        cout << "Please enter a valid option!\n\n"; // Display error when user gives invalid option
-        cin >> selection;
+        std::cout << "Please enter a valid option!" << std::endl << std::endl; // Display error when user gives invalid option
+        std::cin >> selection;
         gmoMenu(); // Re-initializes menu function for option select
     }
 }
@@ -304,55 +302,55 @@ int gmoMenu() {
 ////////////////// START MAIN SUBJECT FUNCTIONS //////////////////
 
 int birthControl() { // Display ASCII Art
-    cout << bcArt;
+    std::cout << bcArt;
 
     // DISPLAY MENU [START]
-    cout << "Select an option\n\n";
-    cout << "1. " << bcOne << "\n"
-            "2. " << bcTwo << "\n"
-            "3. " << bcThree << "\n"
-            "4. " << back << "\n\n";
+    std::cout << "Select an option" << std::endl << std::endl;
+    std::cout << "1. " << bcOne << std::endl <<
+            "2. " << bcTwo << std::endl <<
+            "3. " << bcThree << std::endl <<
+            "4. " << back << std::endl << std::endl;
     // DISPLAY MENU [END]
     birthControlMenu();
 }
 
 int antibiotics() {
-    cout << abArt; // Display ASCII Art
+    std::cout << abArt; // Display ASCII Art
 
     // DISPLAY MENU [START]
-    cout << "Select an option\n\n";
-    cout << "1. " << abOne << "\n"
-            "2. " << abTwo << "\n"
-            "3. " << abThree << "\n"
-            "4. " << back << "\n\n";
+    std::cout << "Select an option" << std::endl << std::endl;
+    std::cout << "1. " << abOne << std::endl <<
+            "2. " << abTwo << std::endl <<
+            "3. " << abThree << std::endl <<
+            "4. " << back << std::endl << std::endl;
     // DISPLAY MENU [END]
-    cin >> selection;
+    std::cin >> selection;
     antibioticsMenu();
 }
 
 int GMO() {
-    cout << gmoArt; // Display ASCII Art
+    std::cout << gmoArt; // Display ASCII Art
 
     // DISPLAY MENU [START]
-    cout << "Select an option\n\n";
-    cout << "1. " << gmoOne << "\n"
-            "2. " << gmoTwo << "\n"
-            "3. " << gmoThree << "\n"
-            "4. " << back << "\n\n";
+    std::cout << "Select an option" << std::endl << std::endl;
+    std::cout << "1. " << gmoOne << std::endl <<
+            "2. " << gmoTwo << std::endl <<
+            "3. " << gmoThree << std::endl <<
+            "4. " << back << std::endl << std::endl;
     // DISPLAY MENU [END]
-    cin >> selection;
+    std::cin >> selection;
     gmoMenu();
 }
 
 int References() {
-    cout << refArt;
-    cout << "1. " << ref1 <<
+    std::cout << refArt;
+    std::cout << "1. " << ref1 <<
             "2. " << ref2 <<
             "3. " << ref3 <<
             "4. " << ref4 <<
             "5. " << ref5;
-    cin.ignore();
-    cin.get();
+    std::cin.ignore();
+    std::cin.get();
     menu();
 }
 
@@ -361,17 +359,17 @@ int References() {
 int menu() { // Main menu function
     system ("clear");
     // DISPLAY MENU [START]
-    cout << welcomeString;
-    cout << "1. " << mainOne << "\n"
-            "2. " << mainTwo << "\n"
-            "3. " << mainThree << "\n"
-            "4. " << mainFour << "\n"
-            "5. " << quit << "\n\n";
+    std::cout << welcomeString;
+    std::cout << "1. " << mainOne << std::endl <<
+            "2. " << mainTwo << std::endl <<
+            "3. " << mainThree << std::endl <<
+            "4. " << mainFour << std::endl <<
+            "5. " << quit << std::endl << std::endl;
     if(invalid) {
-        cout << "Please enter a valid option!\n\n"; // Display error when user gives invalid option
+        std::cout << "Please enter a valid option!" << std::endl << std::endl; // Display error when user gives invalid option
     }
     // DISPLAY MENU [END]
-    cin >> selection;
+    std::cin >> selection;
     if (selection == "1") {
         system ("clear");
         invalid = false;

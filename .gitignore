@@ -29,6 +29,8 @@
 *.app
 Chemistry
 
+*.gcc-flags.json
+
 # CMake Files
 CMakeCache.txt
 *.cmake
