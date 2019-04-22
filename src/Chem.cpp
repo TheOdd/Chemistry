@@ -2,15 +2,10 @@
 
 bool invalid = false;
 
-int menu();
-int birthControl();
-int GMO();
-int antibiotics();
-
 std::string selection; // Variable used to store all menu inputs from user.
 int selectionInt;
 
-int gmoTimelineOptions() {
+void gmoTimelineOptions() {
     std::cout << gmoAdditionalOptionsPrompt;
     std::cout << gmoAdditionalOptionsString;
     std::cout <<  "15. " << back << std::endl << std::endl;
@@ -42,7 +37,7 @@ int gmoTimelineOptions() {
 
 // Function for timeline animation
 
-int timeLine(int dashes) {
+void timeLine(int dashes) {
     std::cin.get();
     for (int i = 0; i < dashes; i++) {
         usleep(300000);
@@ -52,7 +47,7 @@ int timeLine(int dashes) {
 
 ////////////////// START MAIN SUBJECT MENU OPTION EVENTS /////////////
 
-int bcOptions(int option) {
+void bcOptions(int option) {
     if (option == 1) { // Birth rates
         std::cout << bc1Art;
         std::cout << bc1Stats1;
@@ -110,7 +105,7 @@ int bcOptions(int option) {
     }
 }
 
-int abOptions(int option) {
+void abOptions(int option) {
     if (option == 1) { // How it works
         std::cout << ab1Art;
         std::cout << "Various types of antibiotics work in either of the following two ways:" << std::endl;
@@ -141,7 +136,7 @@ int abOptions(int option) {
     }
 }
 
-int gmoOptions(int option) {
+void gmoOptions(int option) {
     if (option == 1) { // Effects on food supplies
         system("clear");
         std::cout << gmo1Art;
@@ -209,7 +204,7 @@ int gmoOptions(int option) {
 
 ////////////////// START MAIN SUBJECT MENU HANDLERS //////////////////
 
-int birthControlMenu() {
+void birthControlMenu() {
     std::cin >> selection;
     selectionInt = stoi(selection);
     if (selectionInt < 4 && selectionInt > 0) {
@@ -233,7 +228,7 @@ int birthControlMenu() {
     }
 }
 
-int antibioticsMenu() {
+void antibioticsMenu() {
     if (selection == "1") {
         system ("clear");
         abOptions(1);
@@ -265,7 +260,7 @@ int antibioticsMenu() {
     }
 }
 
-int gmoMenu() {
+void gmoMenu() {
     if (selection == "1") {
         system ("clear");
         gmoOptions(1);
@@ -301,7 +296,7 @@ int gmoMenu() {
 
 ////////////////// START MAIN SUBJECT FUNCTIONS //////////////////
 
-int birthControl() { // Display ASCII Art
+void birthControl() { // Display ASCII Art
     std::cout << bcArt;
 
     // DISPLAY MENU [START]
@@ -314,7 +309,7 @@ int birthControl() { // Display ASCII Art
     birthControlMenu();
 }
 
-int antibiotics() {
+void antibiotics() {
     std::cout << abArt; // Display ASCII Art
 
     // DISPLAY MENU [START]
@@ -328,7 +323,7 @@ int antibiotics() {
     antibioticsMenu();
 }
 
-int GMO() {
+void GMO() {
     std::cout << gmoArt; // Display ASCII Art
 
     // DISPLAY MENU [START]
@@ -342,7 +337,7 @@ int GMO() {
     gmoMenu();
 }
 
-int References() {
+void References() {
     std::cout << refArt;
     std::cout << "1. " << ref1 <<
             "2. " << ref2 <<
@@ -356,7 +351,7 @@ int References() {
 
 ////////////////// END MAIN SUBJECT FUNCTIONS //////////////////
 
-int menu() { // Main menu function
+void menu() { // Main menu function
     system ("clear");
     // DISPLAY MENU [START]
     std::cout << welcomeString;

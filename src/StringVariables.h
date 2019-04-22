@@ -116,5 +116,7 @@ string gmoTimelineOptionString(int option)
     return gmoTimelineOption13;
   else if (option == 14)
     return gmoTimelineOption14;
+  else
+    return "";
 }
 // Function to grab specific string based on option input. [END]
